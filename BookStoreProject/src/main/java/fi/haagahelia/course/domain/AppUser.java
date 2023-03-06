@@ -19,6 +19,9 @@ public class AppUser {
     // Username with unique constraint
     @Column(name = "username", nullable = false, unique = true)
     private String username;
+    
+    @Column(name = "email", unique = true)
+    private String eMail;
 
     @Column(name = "password", nullable = false)
     private String passwordHash;
@@ -66,5 +69,13 @@ public class AppUser {
 
 	public void setRole(String role) {
 		this.role = role;
+	}
+
+	public String geteMail() {
+		return eMail;
+	}
+
+	public void seteMail(String eMail) {
+		this.eMail = eMail;
 	}
 }

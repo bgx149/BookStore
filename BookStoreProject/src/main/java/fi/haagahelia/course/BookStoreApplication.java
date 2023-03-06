@@ -42,6 +42,7 @@ public class BookStoreApplication {
 		
 			AppUser user1 = new AppUser("user", "$2a$06$3jYRJrg0ghaaypjZ/.g4SethoeA51ph3UD4kZi9oPkeMTpjKU5uo6", "USER");
 			AppUser user2 = new AppUser("admin", "$2a$10$0MMwY.IQqpsVc1jC8u7IJ.2rT8b0Cd3b3sfIBGV2zfgnPGtT4r0.C", "ADMIN");
+			AppUser user3 = new AppUser("alex", "$2y$10$LE/DXurNQY4Q7mWV6.V8o.qKMbW35p4dIz2bUaFXUnPROujIAb2cu", "ADMIN");
 			urepository.save(user1);
 			urepository.save(user2);
 	
