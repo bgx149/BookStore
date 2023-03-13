@@ -39,12 +39,16 @@ public class BookStoreApplication {
 			crepository.save(new Category("Folktale"));
 			
 			brepository.save(new Book("Harry Potter Deathy Hallows", "J.K Rowling", 2007, "9780545010221", 9.99, crepository.findByName("Fiction").get(0)));
+			brepository.save(new Book("The Girl with the Dragon Tattoo", "Stieg Larsson", 2005, "9780307269751", 10.80, crepository.findByName("Drama").get(0)));
+			brepository.save(new Book("Holy Bible: : English Standard Version", "Collins Anglicised ESV Bibles", 2012,"9780007103072", 13.50, crepository.findByName("Fiction").get(0)));
+
 		
 			AppUser user1 = new AppUser("user", "$2a$06$3jYRJrg0ghaaypjZ/.g4SethoeA51ph3UD4kZi9oPkeMTpjKU5uo6", "USER");
 			AppUser user2 = new AppUser("admin", "$2a$10$0MMwY.IQqpsVc1jC8u7IJ.2rT8b0Cd3b3sfIBGV2zfgnPGtT4r0.C", "ADMIN");
 			AppUser user3 = new AppUser("alex", "$2y$10$LE/DXurNQY4Q7mWV6.V8o.qKMbW35p4dIz2bUaFXUnPROujIAb2cu", "ADMIN");
 			urepository.save(user1);
 			urepository.save(user2);
+			urepository.save(user3);
 	
 			
 			log.info("fetch all books");

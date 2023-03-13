@@ -8,4 +8,5 @@ public interface BookStoreRepository extends CrudRepository<Book, Long> {
 
     List<Book> findBytitle(String title);
     
+    
 }
